@@ -66,13 +66,13 @@ def jagamine(loend:list,p:list,n:list,nol:list):
             nol.append(el)
 
 def keskmine(loend:list):
-    """Leiab loendist arvude keskmise
+    """Leiab loendist arvude keskmise (kui loendi pikkus on 0, siis on ka keskmine väärtus 0)
     :param list loend: teie loend
     :rtype: var
     """
     n=len(loend)
-    if n==0:
-        kesk=0
+    if n==0: 
+        kesk=0 
     else:
         sum=0
         for i in loend:
